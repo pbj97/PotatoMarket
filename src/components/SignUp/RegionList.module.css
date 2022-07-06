@@ -1,0 +1,15 @@
+.RegionList {
+  display: flex;
+  flex-direction: column;
+}
+
+.RegionList button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  line-height: 2rem;
+}
+
+.RegionList button:hover {
+  background-color: #e19a30;
+}
