@@ -14,10 +14,6 @@ const RegionInput = (props) => {
 
   const REST_API_KEY = '2ef5ed6af24b69df18f27e2e65f9b9ba';
 
-  const combineAddress = (시도, 구, 동) => {
-    return 시도 + ' ' + 구 + ' ' + 동;
-  };
-
   function onGeoOk(position) {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
@@ -32,13 +28,7 @@ const RegionInput = (props) => {
         }
       )
       .then((res) => {
-        setAddress(
-          combineAddress(
-            res.data.documents[0].address.region_1depth_name,
-            res.data.documents[0].address.region_2depth_name,
-            res.data.documents[0].address.region_3depth_name
-          )
-        );
+        setAddress(res.data.documents[0].address.region_3depth_name);
       })
       .catch((e) => console.log(e));
   }
