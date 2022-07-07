@@ -1,10 +1,10 @@
 .button {
   font: inherit;
-  width: 50%;
+  width: 65%;
   border: 1px solid #e7b467;
   background: #e7b467;
   color: white;
-  padding: 1.5rem 4rem;
+  padding: 1.2rem 3rem;
   cursor: pointer;
   font-size: 1.5rem;
   border-radius: 30px;

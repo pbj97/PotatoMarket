@@ -1,0 +1,35 @@
+.profile h1 {
+  margin-top: 8rem;
+}
+
+.profileImg {
+  margin-top: 3rem;
+}
+
+.profileImg img {
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1.5px solid black;
+}
+
+.profile img:hover {
+  transform: scale(1.02);
+}
+.nickName {
+  text-align: left;
+}
+
+.nickName h3 {
+  margin-left: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.profile Input {
+  margin-bottom: 10rem;
+}
+
+.profileInput {
+  display: none;
+}

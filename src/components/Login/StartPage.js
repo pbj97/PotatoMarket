@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Card from '../UI/Card/Card';
 import Button from '../UI/Button/Button';
 import SignUp from '../SignUp/SignUp';
+import Login from './Login';
 import classes from './StartPage.module.css';
 
 const StartPage = (props) => {
@@ -34,7 +35,8 @@ const StartPage = (props) => {
           </span>
         </Card>
       )}
-      {startBtnClicked && <SignUp />}
+      {startBtnClicked && <SignUp onLogin={props.onLogin} />}
+      {loginBtnClicked && <Login onLogin={props.onLogin} />}
     </React.Fragment>
   );
 };

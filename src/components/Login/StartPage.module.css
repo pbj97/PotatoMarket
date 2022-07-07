@@ -1,18 +1,14 @@
-.startPage {
-  padding: 10rem;
-}
-
 .startPage h1 {
   min-width: 300px;
 }
 .startPage img {
   width: 50%;
   max-width: 200px;
-  padding-bottom: 3rem;
+  margin: 9rem 0 3rem 0;
 }
 
 .startPage p {
-  padding-bottom: 8rem;
+  margin-bottom: 8rem;
 }
 
 .startPage Button {

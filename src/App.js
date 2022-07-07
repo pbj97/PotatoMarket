@@ -12,7 +12,7 @@ function App() {
     if (storedUserLoggedInInformation === '1') {
       setIsLoggedIn(true);
     }
-  }, []);
+  }, [isLoggedIn]);
 
   const loginHandler = () => {
     localStorage.setItem('isLoggedIn', '1');
