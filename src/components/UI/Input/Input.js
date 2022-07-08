@@ -9,6 +9,7 @@ const Input = forwardRef(function Input(props, ref) {
       className={`${classes.input} ${props.className}`}
       placeholder={props.placeholder || ''}
       ref={ref}
+      onChange={props.onChange || undefined}
       value={props.value || ''}
     >
       {props.children}

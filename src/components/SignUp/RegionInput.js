@@ -39,13 +39,18 @@ const RegionInput = (props) => {
 
   const regionInput = useRef();
 
-  const submitHandler = (event) => {
+  const enterRegionHandler = (event) => {
     props.onRegionInput(event.target.innerText);
   };
 
   const getLocationHandler = () => {
     navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
   };
+
+  const locationChangeHandler = (event) => {
+    setAddress(event.target.value);
+  };
+
   return (
     <Card className={classes.signUp}>
       <div>
@@ -53,13 +58,14 @@ const RegionInput = (props) => {
           ref={regionInput}
           type="text"
           placeholder="내 동네 이름(동,읍,면)으로 검색"
+          onChange={locationChangeHandler}
           value={address}
         />
       </div>
       <Button className={classes.currentLocation} onClick={getLocationHandler}>
         현재 위치로 찾기
       </Button>
-      <ReginList className={classes.regionList} onClick={submitHandler} />
+      <ReginList className={classes.regionList} onClick={enterRegionHandler} />
     </Card>
   );
 };

@@ -20,12 +20,12 @@ const StartPage = (props) => {
       {!startBtnClicked && !loginBtnClicked && (
         <Card className={classes.startPage}>
           <img src="img/potato.png" alt="potato" />
-          <h1>당신 근처의 감자마켓</h1>
+          <h1>중고거래는 감자마켓</h1>
           <p>
-            내 동네를 설정하고<br></br>감자마켓을 시작해보세요.
+            회원가입을 하고<br></br>감자마켓을 시작해보세요.
           </p>
           <div>
-            <Button onClick={startBtnHandler}>시작하기</Button>
+            <Button onClick={startBtnHandler}>회원가입</Button>
           </div>
           <span>
             이미 계정이 있나요?

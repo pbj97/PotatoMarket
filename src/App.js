@@ -26,11 +26,7 @@ function App() {
 
   return (
     <React.Fragment>
-      {!isLoggedIn && (
-        <div className="main">
-          <StartPage onLogin={loginHandler} />
-        </div>
-      )}
+      {!isLoggedIn && <StartPage onLogin={loginHandler} />}
       {isLoggedIn && (
         <MainPage onLogin={loginHandler} onLogout={logoutHandler} />
       )}

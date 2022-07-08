@@ -4,13 +4,11 @@
 
 html {
   font-family: sans-serif;
+  letter-spacing: -0.5px;
 }
 
 body {
-  background: #1f1f1f;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
-}
-
-.main {
-  display: flex;
 }

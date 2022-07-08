@@ -1,9 +1,8 @@
-.startPage h1 {
-  min-width: 300px;
+.startPage {
+  text-align: center;
 }
 .startPage img {
-  width: 50%;
-  max-width: 200px;
+  width: 13rem;
   margin: 9rem 0 3rem 0;
 }
 

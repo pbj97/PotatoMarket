@@ -17,17 +17,22 @@
 .profile img:hover {
   transform: scale(1.02);
 }
-.nickName {
-  text-align: left;
-}
 
-.nickName h3 {
-  margin-left: 1.2rem;
+.nickname h3 {
   margin-bottom: 0.3rem;
 }
 
 .profile Input {
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
+}
+
+.nicknameInput {
+  height: 10rem;
+  margin-bottom: 6rem;
+}
+
+.nicknameInput span {
+  color: red;
 }
 
 .profileInput {
