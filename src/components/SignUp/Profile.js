@@ -45,7 +45,7 @@ const Profile = (props) => {
     return () => {
       clearTimeout(identifier);
     };
-  }, [enteredNickname, fileImg]);
+  }, [enteredNickname]);
 
   return (
     <Card className={classes.profile}>
